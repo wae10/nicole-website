@@ -1,0 +1,4 @@
+Flask
+gunicorn #for Heroku
+python-dotenv
+requests
