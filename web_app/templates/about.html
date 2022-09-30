@@ -1,0 +1,100 @@
+<div class="section-wrapper">
+
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Container for flexboxes */
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        /* Create four equal columns */
+        .column {
+          flex: 25%;
+          padding: 20px;
+        }
+        
+
+        .container_image {
+            width: 250px;
+            margin: 6px 20px 5px 0;
+            float: left;
+        }
+
+        .container_text {
+        }
+
+        .caption {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 15px;
+        color: #404040;
+        text-align: center;
+        }
+
+
+        /* On screens that are 992px wide or less, go from four columns to two columns */
+        @media screen and (max-width: 992px) {
+        .column {
+            flex: 50%;
+          }
+        }
+        
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .row {
+            flex-direction: column;
+        }
+
+        .container_text {
+              display: inline-table;
+        }
+
+
+        .container_image {
+            width: unset;
+            margin: 0;
+            float: none;
+        }
+
+
+        }
+
+
+    </style>
+
+
+
+
+    <section class="section about" id="about">
+        <div id="about-text">
+            <div class="section-heading">About Me</div>
+
+            <!-- <p class="paragraph-text center-text">Actively seeking professional opportunities in data analytics for summer 2021.</p> -->
+
+
+                <figure class="container_image">
+                    <!-- <img src = "../assets/images/about-me-pic.JPG" > -->
+                    <!-- <figcaption class="caption">
+                        Me with my dog, Opal :)
+                    </figcaption> -->
+
+                </figure>
+
+    
+
+
+                <div class="container_text"> 
+                <p class="paragraph-text justify-text">
+                Hi, my name is Nicole, but you can call me Ni-cool! 
+                <br><br>
+
+            </p>
+
+            </div>
+        </div>
+    </section>
+</div>
